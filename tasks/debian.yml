@@ -27,3 +27,4 @@
     state: present
     filename: machine-learning
     update_cache: "{{ 'yes' if not ansible_check_mode | bool else 'no' }}"
+  when: nvidia_repo_distarch == ubuntu2004
